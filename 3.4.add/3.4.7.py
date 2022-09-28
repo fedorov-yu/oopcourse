@@ -21,7 +21,7 @@ class MaxPooling:
 
         rows_range = (rows - h) // sh + 1
         cols_range = (cols - w) // sw + 1
-        
+
         res = [[0] * cols_range for _ in range(rows_range)]
 
         for i in range(rows_range):
