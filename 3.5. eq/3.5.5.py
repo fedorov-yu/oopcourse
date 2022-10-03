@@ -6,7 +6,7 @@ class FileAcceptor:
         return filename.split('.')[-1] in self.lst
 
     def __add__(self, other):
-        new_lst = list(set(self.lst + other.lst))
+        new_lst = list(set(self.lst + other.coords))
         return self.__class__(*new_lst)
 
     def get_items(self):
